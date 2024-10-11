@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+<body>
+    <button onclick="toHome()">к Главной Странице</button>    
+    <div class="accordion">
+        <input type="checkbox" id="accordion-1" class="accordion-checkbox">
+        <label for="accordion-1" class="accordion-header">Важная Информация</label>
+        <div class="accordion-content">
+            <p>Зовут меня Лучиан,2003 года рождения<p> <br><br>
+            <p>Самое первое знакомство с Программированием и MySql: ~16-17 год</p><br><br>
+
+            <p>Знакомство с: JS,Html,CSS,Vue,Strapi,Tailwind,Nuxt,Next,Node.js,PostreSQL,MongoDB(не работал с ней,лишь установил,что то поделал и всё) у меня было в 2023 году,с тех пор Я начал искать новых знаний в сфере iT :)</p>
+       </div>
+        
+        <input type="checkbox" id="accordion-2" class="accordion-checkbox">
+        <label for="accordion-2" class="accordion-header">Неважная Информация</label>
+        <div class="accordion-content">
+            <p>Самое первое знакомство с Программированием было с Языком "Pawn" <br> Именно тогда я и начал познавать программирование,по началу было много чего непонятного,но спустя много времени(и разных форумах по PAWN'у) Я смог достигнуть уровня среднего Pawn-разработчика<br><br>Но так как на одном PAWN'e жить нельзя,да и лёгкий он очень,нету банально интереса учить дальше,по этому решил пойти на JS'ера,и вот,сейчас нахожусь на уровне Junior Frontend Developer'a <br><br><br> Так-же имею и некоторый опыт в сфере Бэкэнда,есть дипломный проект который изначально был на хостинге,мне хоть и подсказывали что и как ибо Я с Linux'о подомными системами не работал,но все же большую часть сделал и Я (правда в любом случае хостинг оказался бесполезным,медленным,так что пришлось перейти на Git-Pages ибо не было времени найти нормальный хостинг)</p>
+            <button onclick="pawnInfo()">*click me for more info about Pawn*</button> <br>
+
+   </div>
+        
+
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
+
+<style>
+*{
+    user-select: none;
+    button{
+        cursor: pointer;
+        border: 3px black dashed;
+        
+    }
+    button:active{
+        color: blueviolet;
+        border: 3px lime solid;
+    }
+}
+ .accordion {
+  display: flex;
+  width: 300px;
+  margin: 20px auto;
+  /* scroll-behavior: smooth; */
+  flex-wrap: wrap;
+}
+
+.accordion-checkbox {
+  display: none;
+}
+
+.accordion-header {
+    display: flex;
+  background-color: #f0f0f0;
+  padding: 15px;
+  cursor: pointer;
+  gap: 13px;
+}
+
+.accordion-header:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border: 3px black  solid;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: cont 1s 1s linear infinite;
+}
+
+@keyframes cont {
+    0%{
+        /* color:blue; */
+        border: 3px black dashed;
+        transition: all 1s;
+    }
+    50%{
+        border: 3px blue solid;
+        transition: all 1s;
+    }
+    100%{
+        border: 3px red solid;
+        transition: all 1s;
+    }
+}
+
+
+.accordion-checkbox:checked + .accordion-header + .accordion-content {
+  display: block;
+}
+button{
+    color: gray;
+}
+</style>

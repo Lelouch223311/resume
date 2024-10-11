@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+</head>
+
+<body>
+    <h1>Привет!</h1>
+    <p class="pshka">*Это резюме ПОЛНОСТЬЮ сделано на чистом CSS,Html,JavaScript</p>
+    <p>Меня зовут Лучиан,Я являюсь <b>| Frontend Junior-Разработчиком |</b></p>
+    <p>Используйте кнопки что бы посмотреть информацию:</p>
+    <ul>
+        <li><button id="btn1" onclick="aboutme()">Обо мне</button></li>
+        <li><button onclick="myProjects()">Мои Проекты</button></li>
+    </ul>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
+<!--! upd: не стал делать отдельные папки/файлы под CSS,все стили имеются в своих html'ках -->
+<!-- *только script.js - общий -->
+<style>
+*{
+    user-select: none;
+    list-style-type: none;
+}
+.pshka{
+    color: gray;
+}
+h1,p,ul,li{
+    display: flex;
+    justify-content: center;
+}
+button{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px;
+    border: 2px gray solid;
+    border-radius: 5px;
+    animation: btn 5s 0.1s linear infinite;
+}
+@keyframes btn {
+    0%{
+        border: 2px lime solid;
+        transition: all 1s;
+    }
+    75%{
+        border: 2px red solid;
+        transition: all 1s;
+    }
+    100%{
+        border: 2px gray solid;
+        transition: all 1s;
+    }
+    
+}
+
+</style>

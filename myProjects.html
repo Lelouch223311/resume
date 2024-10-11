@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+    <button onclick="toHome()">к Главной Странице</button>
+
+    <div class="projects">
+        <div class="diplomProject">
+
+            <div class="card">
+                <img src="./assets/img/mySite.png" class="card-image">
+                <h2 class="card-title">Beautiful Indonesia</h2>
+                <p class="card-description">Мой первый действительно крупный проект</p>
+                <button class="card-button" onclick="toDiplom()">Посмотреть</button>
+            </div>
+
+
+            <div class="card">
+                <img src="./assets/img/myGH.png" class="card-image">
+                <h2 class="card-title">Github-Аккаунт</h2>
+                <p class="card-description">Мой Гитхаб-аккаунт</p>
+                <button class="card-button" onclick="toMyGH()">Посмотреть</button>
+            </div>
+
+            <!-- <button onclick="toDiplom()">*click me*</button> -->
+        </div>
+        <h5>*Увы это все мои проекты на данный момент,хотелось бы набираться опыта и эволюционировать далее в мире iT :3</h5>
+    </div>
+
+</body>
+
+<style>
+    .card {
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .card-description {
+        font-size: 18px;
+        
+        color:red;
+        margin-bottom: 20px;
+    }
+
+    .card-button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .card-button:hover {
+        background-color: #3e8e41;
+    }
+
+    * {
+        user-select: none;
+        list-style-type: none;
+        background-color: black;
+        color: white;
+    }
+
+    .pshka {
+        color: gray;
+    }
+
+    h1,
+    p {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 3px;
+        border: 2px gray solid;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    @keyframes btn {
+        0% {
+            border: 2px lime solid;
+            transition: all 1s;
+        }
+
+        75% {
+            border: 2px red solid;
+            transition: all 1s;
+        }
+
+        100% {
+            border: 2px gray solid;
+            transition: all 1s;
+        }
+
+    }
+</style>
+
+
+</html>
